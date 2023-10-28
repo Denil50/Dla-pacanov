@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Оформление форм</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function agreeForm(chk)
+        {
+            if (chk.agree.checked)
+                document.getElementById("disabled_input").disabled = 0;
+            else
+                document.getElementById("disabled_input").disabled = 1;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="disabled_input">Это поле не активно:</label>
+            <input type="text" id="disabled_input" disabled>
+        </div>
+        <div>
+            <label for="agreeid">Вы готовы включить верхнее поле?&nbsp;&nbsp;&nbsp;</label>
+            <input type="checkbox" id="agreeid" name="agree" class="button" onclick="agreeForm(this.form)">
+        </div>
+        <div>
+            <label for="readonly_input">Это поле только для чтения:</label>
+            <input type="text" id="readonly_input" value="Да, да! Я только для чтения" readonly>
+        </div>
+        <div>
+            <input type="submit" class="button">
+            <input type="reset" class="button">
+            <input type="button" value="Отмена" class="button">
+        </div>
+    </form>   
+</body>
+</html>

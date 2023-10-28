@@ -1,0 +1,21 @@
+nav {
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+
+nav a {
+    border-bottom: 1px solid #666;
+    background-color: #949494;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-left: 5px solid #33adff;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #666;
+    border-left: 5px solid #3333ff;
+}

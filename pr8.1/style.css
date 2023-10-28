@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    font-family: Helvetica, Tahoma, Arial;
+    font-size: 14pt;
+}
+
+form {
+    background-color: #7FFFEE;
+    border: 2px solid #ff8c99;
+    padding: 20px;
+    border-radius: 1em;
+}
+
+div {
+    display: block;
+    margin: 15px;
+}
+
+div#buttons {
+    text-align: center;
+}
+
+div#buttons > input {
+    margin-left: 20px;
+}
+
+input:not([class="button"]) {
+    width: 400px;
+    font-size: 14pt;
+    border-radius: .5em;
+    padding: .1em;
+}
+
+input.button {
+    font-size: 14pt;
+    border-radius: .5em;
+    padding: .1em;
+}
+
+input:default {
+    background-color: #c0c0c0;
+}
+
+input:disabled {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 0 !important;
+}
+
+form > div:first-child > input:enabled {
+    background-color: grey;
+    border: 1px dotted red;
+    border-radius: .5em;
+}
+
+input:read-only {
+    background-color: pink;
+    opacity: .3;
+}
