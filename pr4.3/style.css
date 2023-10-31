@@ -4,48 +4,50 @@
 }
 
 body {
-    background-image: url("https://imgholder.ru/600x300/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson");
+    background-image: url("main_bg.jpg");
     background-origin: cover;
     background-attachment: fixed;
     background-color: gray;
 }
 
-.box {
+div {
     width: 100em;
     height: 20em;
     margin: 3em auto;
     border: 3px solid rgb(150, 150, 150);
 }
 
-.box:first-child {
-    background: url("https://imgholder.ru/600x300/8493a8/adb9ca&text=IMAGE+HOLDER&font=kelson");
+body > div:first-child {
+    background: url("bg1.jpeg") repeat-x rgba(250, 0, 0, 0.2);
     background-size: 10em;
 }
 
-.box:nth-child(2) {
+body > div:nth-child(2) {
     position: relative;
-    background-color: rgba(255, 255, 0, .5);
+    background-color: rgba(255, 255, 0, 0.5);
 }
-.box:nth-child(2)::before {
-    content:"Это псевдоэлемент слева";
+
+body > div:nth-child(2)::before {
+    content: 'Это псевдоэлемент слева';
     position: absolute;
     width: 8em;
     height: inherit;
     background-color: rgba(0, 255, 255, 1);
 }
-.box:nth-child(2)::after {
-    content:"Это псевдоэлемент слева";
+
+body > div:nth-child(2)::after {
+    content: 'Это псевдоэлемент справа';  
     position: absolute;
     width: 8em;
     height: inherit;
-    background-color: rgba(0, 255, 255, 1);
-    right: 0;  
+    background-color: rgba(255, 0, 255, 1);
+    right: 0;
 }
 
-.box:nth-child(3) {
-    background: linear-gradient(to top, #fff, #00f);
+body > div:nth-child(3) {
+    background: linear-gradient(to top, #fff, #0ff);
 }
 
-.box:last-child {
-    background: radial-gradient(ellipse farthest-corner at 50px 80px, #fff, #5000ff );
+body > div:nth-child(4){
+    background: radial-gradient(ellipse farthest-corner at 50px 80px, #fff, #5000ff);
 }
