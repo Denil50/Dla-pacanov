@@ -1,0 +1,91 @@
+@font-face {
+    font-family: Halvetica, Tahoma, Arial;
+    src: url(font/Halvetica.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Tahoma, Arial;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, .2);
+}
+
+h1 {
+    padding: 15px 0;
+    font-size:  6em;
+    text-align: center;
+    text-shadow: -5px 0 5px black
+}
+
+body > div > div > div {
+    display: inline-block;
+    glyph-orientation-vertical: top;
+    margin: 0 10px;
+    width: 375px;
+    height: 175px;
+    background-color: rgba(210, 0, 0, .2);
+}
+
+body > div > div > div > h2 {
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+body > div > div > div > p {
+    text-indent: 10px;
+}
+
+body > div > div > div:nth-child(2) > p {
+    word-spacing: 5px;
+}
+
+body > div > div:last-child > p {
+    height: 25px;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first {
+    word-spacing: 25px;
+}
+
+.second {
+    word-spacing: 13px;
+    letter-spacing: 5px;
+}
+
+.third {
+    word-spacing: 11px ;
+    font-size: 13px;
+} 
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.rendered-form{
+    padding: 30px;
+}
+.formbuilder-text{
+    padding: 10px 0;
+}
+.form-control{
+    padding: 5px;
+    width: 800px;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+.btn{
+    padding: 5px;
+    border-radius: 4px;
+}

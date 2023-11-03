@@ -12,20 +12,21 @@ body{
 header{
   background-color: rgba(0, 0, 255, .3);
 }
-header > img{
+.logo{
   display: inline-block;
   font-size: 7em;
   float: right;
+  height: 200px;
 }
-header > nav{
+.menu{
   width: 80em;
 }
-header > nav > a{
+.menu a{
   text-decoration: none;
   font-size: 3em;
   color: black;
 }
-header > nav >a:visited{
+.menu a:visited{
   color: black;
 }
 main {
@@ -37,7 +38,7 @@ main > section:first-child > article {
 main > section:first-child > article > img {
   width: 80em;
 }
-main > section:first-child > article::before {
+/* main > section:first-child > article::before {
   content: '<';
   position: absolute;
   color: black;
@@ -46,7 +47,7 @@ main > section:first-child > article::before {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   cursor: pointer;
-}
+} */
 
 main > section:nth-child(2) {
   background-color: rgba(255, 255, 0, .3);
@@ -69,7 +70,7 @@ footer > nav > a {
 footer > nav > a:visited {
   color: black;
 }
-footer > img {
+.logo__footer {
   display: inline-block;
   width: 10em;
 }
